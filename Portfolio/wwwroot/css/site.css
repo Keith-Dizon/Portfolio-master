@@ -1,0 +1,57 @@
+/* Default Light Mode */
+:root {
+    --bg-color: #f8f9fa; /* Light gray background */
+    --text-color: black;
+    --card-bg: white;
+    --card-text: black;
+    --btn-bg: white;
+    --btn-text: black;
+}
+
+/* Dark Mode */
+.dark-mode {
+    --bg-color: #121212;
+    --text-color: #E0E0E0;
+    --card-bg: #222;
+    --card-text: #E0E0E0;
+    --btn-bg: #444;
+    --btn-text: white;
+}
+
+/* Apply Theme */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.5s ease, color 0.5s ease;
+}
+
+/* Card Hover Effect */
+.card {
+    background: var(--card-bg);
+    color: var(--card-text);
+    transition: transform 0.3s ease-in-out, background 0.3s, color 0.3s;
+}
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+/* Dark Mode Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+    .theme-toggle:hover {
+        background: var(--btn-text);
+        color: var(--btn-bg);
+    }

@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section with Bootstrap Carousel -->
+<div id="heroCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/kit.jpg" class="h-15 w-15" alt="Hero Image 1">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 p-3 rounded">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Building modern and responsive web applications</p>
+                <a href="@Url.Action("Index", "Portfolio")" class="btn btn-primary">View My Work</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Me / Skills Section -->
+<div class="container text-center mb-5">
+    <h2>About Me</h2>
+    <p class="lead">I am a passionate web developer skilled in ASP.NET Core, C#, and Bootstrap.</p>
+    <a href="@Url.Action("Index", "About")" class="btn btn-outline-dark">Learn More</a>
+</div>
+
+<!-- Quick Portfolio Preview -->
+<div class="container">
+    <h2 class="text-center mb-4">Featured Projects</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/design1.png" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Project One</h5>
+                    <p class="card-text">A great project showcasing modern web design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/design2.jpeg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                    <h5 class="card-title">Project Two</h5>
+                    <p class="card-text">An amazing project built with ASP.NET Core.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="~/images/modern.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                    <h5 class="card-title">Project Three</h5>
+                    <p class="card-text">A responsive web app with a modern UI.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mt-4">
+        <a href="@Url.Action("Index", "Portfolio")" class="btn btn-primary">See More Projects</a>
+    </div>
+</div>
